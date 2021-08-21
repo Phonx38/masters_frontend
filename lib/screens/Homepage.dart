@@ -150,6 +150,7 @@ class _HomePageState extends State<HomePage> {
                               primary: Colors.green,
                             ),
                             onPressed: () async {
+                              FocusScope.of(context).unfocus();
                               if (_formKey.currentState.validate()) {
                                 setState(() {
                                   loading = true;
